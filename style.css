@@ -1,0 +1,405 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+}
+
+
+:root{
+    --teksbiasa: 'Dosis', sans-serif;
+    --acsentColor: #00ff42;
+    --mainColor: #1f1f3d;
+    --mainHover: #ff5540;
+}
+body {
+    background-color: var(--mainColor);
+}
+/* Navigasi Bar */
+
+.nav{
+    position: sticky;
+    padding: 0 1rem;
+    background-color: rgba(0, 23, 61);
+    width: 100%;
+    height: 100%;
+}
+
+.navigasi {
+    width: 100%;
+    padding-top: 10px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigasi-logo {
+    font-size: 2rem;
+}
+
+.navigasi-logo a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.navigasi-link {
+    display: flex;
+    gap: 2rem;
+}
+
+.navigasi-link li{
+    list-style: none;
+    padding-top: 10px;
+    font-family: var(--textbiasa);
+}
+
+.navigasi-link li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+}
+
+.navigasi-link li a:hover{
+    color: var(--acsentColor);
+    letter-spacing: 2px;
+}
+
+.navigasi-button {
+    background-color: var(--acsentColor);
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    border:3px solid black;
+    transition: 0.7s;
+}
+
+.navigasi-button:hover {
+    background-color: var(--mainHover);
+    scale: 1.02;
+}
+
+.navigasi-togle {
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Navigasi Dropdown */
+
+.navigasi-dropdown{
+    height: 0;
+    display:none;
+    position:absolute;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 0 5px rgba(0, 23, 61);
+    top: 65px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(0, 23, 61, 0.2);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    transition: 1s;
+}
+
+.navigasi-dropdown.open {
+    height: 400px;
+}
+
+.navigasi-dropdown li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigasi-dropdown li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+}
+
+.navigasi-dropdown .navigasi-button {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigasi-dropdown li a:hover {
+    color: var(--acsentColor);
+    letter-spacing: 2px;
+}
+
+/* Navigasi Dropdown End */
+
+/* Section 1 */
+.section1 {
+    margin-top: 50px;
+}
+
+.section1isi{
+    font-family: 'DM Mono', monospace;
+}
+
+.section1isi h1 {
+    font-family: 'DM Mono', monospace;
+    font-weight: bold;
+    font-size: 2.1rem;
+    
+ 
+}
+
+.section1isi h3 {
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin:1rem 0 ;
+}
+
+.section1isi p {
+    font-family: 'DM Mono', monospace;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.section1isi p span{
+    font-family: 'DM Mono', monospace;
+    font-weight: bold;
+    color: var(--acsentColor);
+}
+
+.section1isi a button {
+    border: none;
+    background-color: var(--acsentColor);
+    text-decoration: none;
+    font-size: 1.6rem;
+    box-shadow: 0 0 5px var(--acsentColor),
+                0 0 10px var(--acsentColor);
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    
+}
+
+.section1isi a button:hover {
+    background-color: var(--mainHover);
+    box-shadow: 0 0 5px var(--mainHover),
+                0 0 10px var(--mainHover);
+    scale:1.05;
+    
+}
+
+.section1gambar img {
+    height: 400px;
+    width: 400px;
+}
+
+.animasigambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animasigambar0 {
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: animasigambar 7s ease-in-out infinite;
+    
+}
+
+.animasigambar0 img {
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow:0 0 10px black;
+}
+
+@keyframes animasigambar {
+    50% {
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+
+.textanimasi0 span {
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.textanimasi0 .textanimasi {
+    position: relative;
+}
+
+.textanimasi.textanimasi2:before{
+    content: " ";
+    position: absolute;
+    background-color: var(--mainColor);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid var(--acsentColor);
+    animation: textanimasi 3s steps(12) infinite;
+}
+
+@keyframes textanimasi {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.socialmediaicon {
+    display: flex;
+    padding-top: 3rem;
+}
+.socialmediaicon a i {
+    font-size: 3rem;
+    padding-right: 1.5rem;
+    transition: 0.4s;
+}
+.socialmediaicon a i:hover {
+    scale:1.1;
+}
+.socialmediaicon .fa-youtube {
+    color: #ff1f00;
+}
+.socialmediaicon .fa-youtube:hover {
+    text-shadow: 0 0 5px #ff1f00;
+}
+.socialmediaicon .fa-instagram {
+    color: #b900ff;
+}
+.socialmediaicon .fa-instagram:hover {
+    text-shadow: 0 0 5px #b900ff;
+}
+.socialmediaicon .fa-github {
+    color: #ffffff;
+}
+.socialmediaicon .fa-github:hover {
+    text-shadow: 0 0 5px #ffffff;
+}
+.socialmediaicon .fa-telegram {
+    color: #006cff;
+}
+.socialmediaicon .fa-telegram:hover {
+    text-shadow: 0 0 5px #006cff;
+}
+/* Section 1 End */
+
+#tentang .card {
+    background-color: var(--acsentColor);
+    height: 300px;
+}
+
+/* Section 2 */
+
+.section2 {
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(3px);
+    margin-top: 100px;
+}
+
+.section2isi h1 {
+    font-family: 'DM Mono', monospace;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding:1rem 0;
+    background-color: rgba(0,0,0);
+    padding-top: 20px;
+    transform: translate(0, -2rem);
+}
+.section2isi h4 {
+    font-family: 'DM Mono', monospace;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.section2isi p {
+  font-size: 1.8rem;  
+}
+/* Section 2 End */
+
+/* Responsive Navbar */
+
+@media (max-width: 800px){
+    .nav {
+        position: sticky;
+    }
+    .navigasi .navigasi-link, .navigasi .navigasi-button {
+        display: none;
+    }
+    .navigasi-togle {
+        display: block;
+    }
+    .navigasi-dropdown{
+        display: block;
+    }
+    .section1isi h1 {
+        font-size: 2rem;
+    }
+    .section1isi h3 {
+        font-size: 1.7rem;
+    }
+    .section1isi p {
+        font-size: 1.3rem;
+    }
+    .section1gambar img {
+        width: 300px;
+        height: 300px;
+    }
+    section2 {
+        
+    }
+    .section2isi h1 {
+        font-size: 2.5rem;
+    }
+    .section2isi h4 {
+        font-size: 1.8rem;
+    }
+    .section2isi p {
+        font-size: 1.5rem;
+    }
+    .socialmediaicon {
+        justify-content: end;   
+    }
+    .socialmediaicon a i {
+    font-size: 3rem;
+    padding-left: 0.7rem;
+}
+}
+
+@media(max-width: 768px){
+    .section1isi h3{
+        margin-top: 4rem;
+    }
+    .section2isi h4 {
+        font-size: 1.6rem;
+    }
+    .socialmediaicon {
+        justify-content: center;   
+    }
+    .socialmediaicon a i {
+    font-size: 2.5rem;
+    padding-left: 0.5rem; 
+  
+}
+/* Responsive Navbar End */
+
+/* Navigasi Bar End*/
